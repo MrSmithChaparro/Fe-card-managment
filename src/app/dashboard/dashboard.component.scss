@@ -1,0 +1,91 @@
+.navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+    width: 100%;
+}
+
+.logo, .nav-options {
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.card-selector {
+    margin: 0 10px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 24px;
+    left: 5%;
+}
+
+.menu-icon .bar {
+    margin-left:20px;
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.responsive-menu {
+    
+    left: -12px;
+    display: none ;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+}
+
+.responsive-menu li {
+    margin: 10px;
+    text-align: center;
+    padding: 4px;
+}
+
+.responsive-menu a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+.responsive-menu li:hover {
+    transition: 0.6s;
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Añadimos estilos para la versión responsive */
+@media (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-options {
+        display: none;
+    }
+
+    .responsive-menu.show-menu {
+        position: absolute;
+        display:inline-flex;
+        flex-direction: column;
+        float: left;
+    }
+
+    .responsive-menu.show-menu li {
+        display: block;
+        
+    }
+
+}
