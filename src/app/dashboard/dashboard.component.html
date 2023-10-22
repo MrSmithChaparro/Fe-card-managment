@@ -1,23 +1,30 @@
-
 <nav class="navbar">
     <div class="menu-icon" (click)="toggleMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="responsive-menu">
-            <li><a href="#">Expenses</a></li>
-            <li><a href="#">Payments</a></li>
+            <li>user</li>
+            <a routerLink="/card"><li>Expenses</li></a>
+            <a routerLink="/card"><li>Payments</li></a>
         </div>
     </div>
-    <ul>
-        <div class="logo">Card Management</div>
-    </ul>
-    <div class="card-selector">
-        <select [(ngModel)]="selectedCard">
-            <option value="card1">Card 1</option>
-            <option value="card2">Card 2</option>
-            <option value="card3">Card 3</option>
-        </select>
+    <div class="menu">
+        <div class="nav">
+            <div>Card Management</div>
+            <a routerLink="/card"><div>Expenses</div></a>
+            <a routerLink="/card"><div>Payments</div></a> 
+        </div>
+        <div class="selector">
+            <select [(ngModel)]="selectedCard" class="card-selector">
+                <option value="card1">Card 1</option>
+                <option value="card2">Card 2</option>
+                <option value="card3">Card 3</option>  
+            </select>
+        </div>
+        
     </div>
-
+    <div class="user-name">
+            <p>user</p>
+        </div>
 </nav>
