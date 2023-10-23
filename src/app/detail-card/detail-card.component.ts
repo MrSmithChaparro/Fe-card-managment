@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./detail-card.component.scss']
 })
 export class DetailCardComponent {
-
+  franchising = 'VISA'
+  rate = 48
+  quota = 1000000
+  
 }
