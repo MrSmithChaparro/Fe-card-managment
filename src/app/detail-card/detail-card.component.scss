@@ -1,6 +1,7 @@
 .card-quota{
     justify-content: center;
-    margin: 50px 0px 0px 20vw;
+    margin: 50px 0px 0px ;
+    transform: translateX(100%);
     padding: 18px;
     font-size: 28px;
     display: flex;
@@ -8,11 +9,12 @@
 }
 
 .card{
-    width: 364px;
+    width: 400px;
     height: 217px;
     background-color:rgba(206, 158, 28, 0.856) ;
     position: absolute;
-    margin:128px 20px 0vh 16vw;
+    transform: translateX(44%);
+    margin:128px 20px 0vh 0vw;
     border-radius: 8px;
 }
 
@@ -66,4 +68,31 @@
 
 .card .card-bottom p{
     padding: 20px 12px 12px 12px;
+}
+
+@media (max-width: 700px) {
+    .card{
+        transform: translateX(35%);
+    }
+    .card-quota{
+        transform: translateX(80%);
+    }
+}
+
+@media (max-width: 600px) {
+    .card{
+        transform: translateX(25%);
+    }
+    .card-quota{
+        transform: translateX(60%);
+    }
+}
+
+@media (max-width: 500px) {
+    .card{
+        transform: translateX(10%);
+    }
+    .card-quota{
+        transform: translateX(50%);
+    }
 }
