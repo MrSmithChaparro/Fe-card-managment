@@ -1,0 +1,77 @@
+.right-container {
+    position: absolute;
+    top: 150px; /* Alinea la parte superior del div en el centro vertical */
+    padding: 10px;
+    background-color: #f0f0f0; /* Ajusta el color de fondo según sea necesario */
+    transform: translateX(290%);
+  }
+
+  table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+
+@media (max-width: 1800px) {
+    .right-container {
+        transform: translateX(280%);
+    }
+}
+
+@media (max-width: 1500px) {
+    .right-container {
+        transform: translateX(210%);
+    }
+}
+
+@media (max-width: 1150px) {
+    .right-container {
+        transform: translateX(180%);
+    }
+}
+
+@media (max-width: 1000px) {
+    .right-container {
+        top: 380px;
+        transform: translateX(46%);
+        right: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .right-container {
+        transform: translateX(36%);
+    }
+}
+
+@media (max-width: 600px) {
+    .right-container {
+        transform: translateX(26%);
+    }
+}
+
+@media (max-width: 500px) {
+    .right-container {
+        transform: translateX(12%);
+    }
+}
